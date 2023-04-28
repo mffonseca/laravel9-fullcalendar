@@ -1,0 +1,42 @@
+{
+    "name": "mffonseca/laravel9-fullcalendar",
+    "description": "Um pacote para integração do Laravel 9x com Fullcalendar",
+    "type": "library",
+    "keywords": [
+        "fullcalendar",
+        "laravel"
+    ],
+    "homepage": "https://github.com/mffonseca/laravel9-fullcalendar",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marcos Fonseca",
+            "email": "contato@marcosfonseca.com.br"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mfonseca\\LaravelFullcalendar\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mfonseca\\LaravelFullcalendar\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mfonseca\\LaravelFullcalendar\\ServiceProvider"
+            ],
+            "aliases": {
+                "Calendar": "Mfonseca\\LaravelFullcalendar\\Facades\\Calendar"
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}
